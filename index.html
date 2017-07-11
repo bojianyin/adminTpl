@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Document</title>
+	<link rel="stylesheet" href="layui/css/layui.css" />
+	<link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+	<header>
+		<div class="wrapper clearfix">
+			<div class="logo fl">
+				Admin
+			</div>
+			<nav class="fr">
+				<ul class="layui-nav" lay-filter="">
+				  <li class="layui-nav-item"><a href="">最新活动</a></li>
+				  <li class="layui-nav-item layui-this"><a href="">产品</a></li>
+				  <li class="layui-nav-item"><a href="">大数据</a></li>
+				  <li class="layui-nav-item">
+				    <a href="javascript:;">解决方案</a>
+				    <dl class="layui-nav-child"> <!-- 二级菜单 -->
+				      <dd><a href="">移动模块</a></dd>
+				      <dd><a href="">后台模版</a></dd>
+				      <dd><a href="">电商平台</a></dd>
+				    </dl>
+				  </li>
+				  <li class="layui-nav-item"><a href="">社区</a></li>
+				</ul>
+				
+			</nav>
+		</div>
+	</header>
+	<section>
+		<ul class="layui-nav layui-nav-tree layui-nav-side" lay-filter="test">
+		<!-- 侧边导航: <ul class="layui-nav layui-nav-tree layui-nav-side"> -->
+		  <li class="layui-nav-item layui-nav-itemed">
+		    <a href="javascript:;">默认展开</a>
+		    <dl class="layui-nav-child">
+		      <dd><a href="javascript:;">选项1</a></dd>
+		      <dd><a href="javascript:;">选项2</a></dd>
+		      <dd><a href="">跳转</a></dd>
+		    </dl>
+		  </li>
+		  <li class="layui-nav-item">
+		    <a href="javascript:;">解决方案</a>
+		    <dl class="layui-nav-child">
+		      <dd><a href="">移动模块</a></dd>
+		      <dd><a href="">后台模版</a></dd>
+		      <dd><a href="">电商平台</a></dd>
+		    </dl>
+		  </li>
+		  <li class="layui-nav-item"><a href="">产品</a></li>
+		  <li class="layui-nav-item"><a href="">大数据</a></li>
+		</ul>
+		
+	</section>
+	<script src="layui/layui.js"></script>
+	<script>
+		layui.use(['layer','element'],function(){
+			var element=layui.element();
+		})
+		
+	</script>
+</body>
+</html>
